@@ -6,8 +6,8 @@ You can find the original code on [GitHub](https://github.com/fabianishere/brain
 Mine obviously isnt as good, I just thought it was a fun idea
 
 ### Disclaimer
-This version of BrainF will not run loops inside loops.
-I am sorry for the inconvenience, but if you want it so bad, then go download the real version.
+~~This version of BrainF will not run loops inside loops.
+I am sorry for the inconvenience, but if you want it so bad, then go download the real version.~~
 
 ## Installation
 ### Linux

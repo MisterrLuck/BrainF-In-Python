@@ -1,4 +1,4 @@
-import msvcrt as inp
+import readline
 
 class Brain:
     def __init__(self, eof='\0'):
@@ -108,17 +108,10 @@ class Brain:
         if rnge[-1] != len(self.cells):
             print("...", end=" ")
         print()
-        #print(self.currCell)
 
 if __name__ == "__main__":
     brain = Brain()
-    brain.run_file("test.bf")
-    #brain.run("+[>,]<-[+<-]>[.>]")
+    brain.run("+[>,]<-[+<-]>[.>]")
     brain.debug()
-    brain.debug(full=True)
-    """
-    brain.run(">++")
-    brain.debug()
-    """
 
     

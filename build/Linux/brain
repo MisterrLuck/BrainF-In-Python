@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file="${1:-shell}"
+if [ $file != "shell" ]; then
+	dir=$(readlink -f $file)
+	python ~/.local/bin/brainf_src/main.py $dir
+else
+	python ~/.local/bin/brainf_src/main.py
+fi

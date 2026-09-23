@@ -1,20 +1,11 @@
-# dir=$(pwd)
+chmod +x brain
 
-cp brainf.sh ~/.brainf.sh
+cp brain ~/.local/bin/brain
 echo "Making bash file"
 
 cd ../../
-cp -r src/ ~/.brainf/
+cp -r src/ ~/.local/bin/brainf_src/
 echo "Creating source code"
 cd ~/
 
-# mv src .brainf
-# mv brainf.sh .brainf.sh
-mv .brainf.sh .brainf/
-
-echo "source ~/.brainf.sh" >> .bashrc
-echo "Running language runner"
-
 echo "Type 'brain' followed by your file name, to run BrainF***"
-source ~/.bashrc
-# cd $dir

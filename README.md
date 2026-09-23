@@ -4,6 +4,13 @@ I remade the BrainF*** Esolang in Python
 
 You can find the original code on [GitHub](https://github.com/fabianishere/brainfuck).
 
+## Table Of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Using Without Installing](#using-without-installing)
+- [Uninstall](#uninstall)
+
 ## Prerequisites
 
 You only need to have python installed.
@@ -26,7 +33,7 @@ brain ../../examples/hello.bf # This runs the hello world example program
 ```
 You shouldn't need to do exact file paths to run a program.
 
-## Usage without Installation
+## Using Without Installing
 
 To use the BrainF interpreter without installing, navigate to the src/ directory.
 
@@ -42,3 +49,19 @@ python main.py # This runs the shell
 python main.py ../examples/hello.bf # This runs the hello world example program
 ```
 
+## Uninstall
+
+Uninstalling is very easy. Provided is an uninstall program which makes it even easier
+
+```bash
+cd build/Linux/
+chmod +x uninstall.sh
+```
+
+If you don't want to trust an uninstall program, then it's very easy to do yourself.
+
+```bash
+cd ~/.local/bin
+rm brain
+rm -r brain_src/
+```

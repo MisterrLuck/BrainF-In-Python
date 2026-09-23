@@ -1,11 +1,13 @@
 chmod +x brain
 
-cp brain ~/.local/bin/brain
+cp brain ~/.local/bin/
 echo "Making bash file"
 
 cd ../../
-cp -r src/ ~/.local/bin/brainf_src/
+cp -r src/ ~/.local/bin/
+cd ~/.local/bin
+mv src/ brainf_src/
+
 echo "Creating source code"
-cd ~/
 
 echo "Type 'brain' followed by your file name, to run BrainF***"
